@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/BookingTaxiRide.css">
+    <title>Taxi Boeking - Booking Form</title>
+</head>
+<body>
+
+<form id="bookingfrm" method="get">
+    <div class="container">
+        <h1>Welcome %User-Name% !</h1>
+        <p>Please fill in this form to Book a Taxi ride. <br>
+        <small><b>* fields</b>are required to be filled in to continue.</small></p>
+
+	<small>Not on your own account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="RickRoll" target="_blank"><b>Click Here</b></a></small>
+        <br>
+
+	<label for="tours">
+        Recommended Tours<br>
+    </label>
+
+	<select name="tours" id="tours">
+	<option value="">
+        Custom
+    </option>
+  	<option value="Beaches">
+        Beaches
+    </option>
+  	<option value="Cities">
+        Cities
+    </option>
+  	<option value="Historic Places">
+        Historic Places
+    </option>
+  	<option value="Popular Spots">
+        Popular Spots
+    </option>
+        required>
+    </select>
+
+        <br>
+        <br>
+        <label for="drivedate">
+            DriveDate *
+            <br>
+        </label>
+        <input type="date" id="drivedate" name="drivedate" min="2020-05-29" max="2021-12-31" required>
+        <br>
+
+        <label for="drivetime">
+            DriveTime *
+            <br>
+        </label>
+        <input type="time" id="drivetime" name="drivedate" required>
+        <br>
+
+        <label for="departureAddress">
+            Departure Address *
+            <br>
+        </label>
+        <input type="text" placeholder="Padualaan 97" name="departureAddress" id="departureAddress" required>
+        <br>
+
+        <label for="departurePostcode">
+            Departure Postcode or Area *
+            <br>
+        </label>
+        <input id="departurePostcode" name="departurePostcode" placeholder="3584CH / Utrecht" required type="text">
+        <br>
+
+        <label for="stopovers">
+            Stopovers
+            <br>
+            <small>
+                put addresses/ areas/ establishments with commas are required to be filled in to continue.
+            </small>
+            <br>
+        </label>
+        <input cols="30" id="stopovers" name="stopovers"
+               placeholder="Padualaan 97 3584CH / Utrecht, Heidelberglaan 7 3584CS / Utrecht, Oudegracht 136 3511AX / Utrecht"
+               rows="5" type="text">
+        <br>
+
+        <label for="destinationAddress">
+	    Destination Address *
+            <br>
+	</label>
+        <input type="text" placeholder="Heidelberglaan 7"
+	       name="destinationAddress" id="destinationAddress" required>
+        <br>
+
+        <label for="destinationPostcode">
+               Destination Postcode or Area *
+               <br>
+        </label>
+        <input type="text" placeholder="3584CS / Utrecht"
+               name="destinationPostcode" id="destinationPostcode" required>
+        <br>
+
+	<label for="TotalPassengers">
+               TotalPassengers
+               <br>
+	</label>
+        <input type="number"
+	       value="1" min="1" max="7" name="TotalPassengers" id="TotalPassengers">
+	<br>
+
+        <label for="roundtrip">
+               RoundTrip ?
+	       <br>
+	       <small>check the box if yes.</small>
+	</label>
+        <input type="checkbox" name="rountrip" id="roundtrip" value="True" >
+	    <br>
+	
+        <p>By completing the booking request you are agreeing to our <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="RickRoll" target="_blank">Terms & Privacy</a>.</p>
+
+        <button type="submit" class="bookbtn" onclick="myFunction()"><b>Sumbit</b></button>
+    </div>
+
+    <div class="container signin">
+        <small>2+2=5</small>
+    </div>
+</form>
+<script>
+    function myFunction() {
+        document.getElementById("frm1").submit();
+    }
+</script>
+
+</body>
+</html>

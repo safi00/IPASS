@@ -1,0 +1,95 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+body {
+    background-color: darkgrey;
+}
+
+* {
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 50px;
+    background-color: white;
+}
+
+form label {font-weight:bold}
+/* date & time input fields */
+input[type=date], input[type=time]{
+    width: 12%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* text input fields */
+input[type=text]{
+    width: 37%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* text input fields */
+input[id="stopovers"]{
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* text input fields */
+input[id="TotalPassengers"]{
+    width: 10%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 10px solid #f1f1f1;
+    margin-bottom: 10px;
+}
+
+/* Set a style for the submit button */
+.bookbtn {
+    align-self: center;
+    background-color: black;
+    color: #4CAF50;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 75%;
+    opacity: 0.7;
+}
+
+.bookbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}

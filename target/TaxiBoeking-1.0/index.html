@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<head>
+    <link href="css/index.css" rel="stylesheet">
+    <title>Taxi Boeking</title>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="NavBar-links">
+    <a href="" class="logo"><img src="images/logo.png" width="50" height="50" alt="Logo"></a>
+    <a href="html/Tours.html" class="NavBar-links-button">Tours</a>
+    <a href="#about" class="NavBar-links-button">About</a>
+    <a href="#contact" class="NavBar-links-button">Contact</a>
+    <a href="html/Portal.html" class="NavBar-links-button">Portal</a>
+</div>
+<i class="BodyContainer">
+<!-- Header -->
+<header>
+        <div class="container">
+            <h2><i class="login-list"></i>Log in and Book your ride !</h2>
+        <div>
+            <form target="_blank">
+                <div>
+                    <div>
+                        <label for="LoginUser"><i class="loginport"></i> User Email</label>
+                        <input type="text" placeholder="Username@hotmail.com" name="LoginUser" id="LoginUser" required>
+                    </div>
+                    <div>
+                        <label id="labelpass" for="LoginPass"><i class="loginport"></i> User Password</label>
+                        <input type="password" placeholder="Enter your password" name="LoginPass" id="LoginPass" required>
+                    </div>
+                    <div>
+                        <label for="anon"><i class="loginport"></i> Logging in Anonymously ?</label>
+                        <input type="checkbox" id="anon" value="true" onchange="showfield()">
+                    </div>
+                    <div>
+                        <label><i class="loginport"></i>Forgot your Login details ? <a href="./index.html#contact">click hier</a></label>
+                        <label><i class="loginport"></i>Not Registered Yet ? <a href="./html/Register.html">click hier</a></label>
+                    </div>
+                </div>
+                <button class="BodyButton" type="submit">Log-in</button>
+            </form>
+        </div>
+    </div>
+</header>
+
+    <div class="Aboutcontainer" id="about">
+        <div class="about">
+            <h3>About</h3>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h6>
+        </div>
+    </div>
+
+    <div class="newscontainer">
+        <h2>Get the best offers first!</h2>
+        <p>Join our newsletter.</p>
+        <label>E-mail</label>
+        <input class="NewsContainer" type="text" placeholder="Your Email address">
+        <button type="button" class="BodyButton">Subscribe</button>
+    </div>
+
+    <div class="contactcontainer" id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions, do not hesitate to ask them.</p>
+        <i style="width:30px"></i> 423 Some adr, Curacao<br>
+        <i style="width:30px"></i> Phone: +5999 123456<br>
+        <i style="width:30px"></i>Email: TaxiBoeking@FakeEmail.com<br>
+        <form action="/action_page.php" target="_blank">
+            <p><input type="text" placeholder="Name" required name="Name"></p>
+            <p><input type="text" placeholder="Email" required name="Email"></p>
+            <p><input type="text" placeholder="Message" required name="Message"></p>
+            <p><button class="BodyButton" type="submit">SEND MESSAGE</button></p>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="Footer">
+    <h5>Find Us On</h5>
+    <div class="social-links">
+        <i class="Facebook"></i>
+        <i class="Instagram"></i>
+    </div>
+</footer>
+    <script type="text/javascript">
+        function showfield(){
+            if(document.getElementById("anon").checked){
+                document.getElementById("LoginPass").style.display="none";
+            }
+            else {
+                document.getElementById("LoginPass").style.display = "block";
+            }
+            if(document.getElementById("anon").checked){
+                document.getElementById("labelpass").style.display="none";
+            }
+            else {
+                document.getElementById("labelpass").style.display = "block";
+            }
+        }
+    </script>
+</i>
+</body>
+</html>
